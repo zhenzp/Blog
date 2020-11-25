@@ -4,10 +4,10 @@
  * @Author: zhenzipu
  * @Date: 2020-11-24 14:23:49
  * @LastEditors: zhenzipu
- * @LastEditTime: 2020-11-25 10:35:58
+ * @LastEditTime: 2020-11-25 11:09:22
  */
 module.exports = {
-  base: "/puzi/",
+  base: "/Blog/",
   title: "璞子", // Title for the site. This will be displayed in the navbar.
   theme: "reco",
   description: 'study programs and record life',
