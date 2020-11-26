@@ -2,7 +2,7 @@
 home: true
 bgImage: '/bg.jpg'
 bgImageStyle: {
-  height: '650px'
+  height: '100vh'
 }
 isShowTitleInHome: true
 ---

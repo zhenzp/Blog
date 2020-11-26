@@ -9,9 +9,15 @@
     "deploy": "bash deploy.sh"
   },
   "dependencies": {
-    "vuepress": "^1.7.1"
+    "vuepress": "^1.7.1",
+    "vuepress-plugin-helper-live2d": "^1.0.2"
   },
   "devDependencies": {
+    "vuepress-plugin-boxx": "^0.0.7",
+    "vuepress-plugin-go-top": "^1.0.4",
+    "vuepress-plugin-meting": "^0.1.1",
+    "vuepress-plugin-nuggets-style-copy": "^1.0.3",
+    "vuepress-plugin-ribbon": "^1.0.2",
     "vuepress-theme-reco": "^1.5.7"
   }
 }
