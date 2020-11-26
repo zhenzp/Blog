@@ -4,7 +4,7 @@
  * @Author: zhenzipu
  * @Date: 2020-11-24 14:23:49
  * @LastEditors: zhenzipu
- * @LastEditTime: 2020-11-26 14:11:13
+ * @LastEditTime: 2020-11-26 16:13:05
  */
 module.exports = {
   base: "/Blog/",
@@ -50,7 +50,10 @@ module.exports = {
         src: "/js/MouseClickEffect.js",
       },
     ],
-  ],
+  ], 
+  markdown: {
+    lineNumbers: true
+  },
   themeConfig: {
     type: "blog",
     huawei: false,
@@ -89,6 +92,35 @@ module.exports = {
         text: "Tag", // 默认 “标签”
       },
     },
+    subSidebar: 'auto', // 在所有页面中启用自动生成子侧边栏，原 sidebar 仍然兼容
+    // 自动形成侧边导航
+    sidebarDepth: 2,
+    displayAllHeaders: false,
+    sidebar: [
+      {
+        title: '开发',   // 必要的
+        path: '/programs/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+        collapsable: false, // 可选的, 默认值是 true,
+        sidebarDepth: 1,    // 可选的, 默认值是 1
+        children: [
+          'programs/开发规范',
+          'programs/面试题',
+          'programs/时间格式处理',
+          'programs/git操作',
+          'programs/iview升级组件',
+          'programs/webpack静态资源处理',
+        ]
+      },
+      {
+        title: '日常',   // 必要的
+        path: '/daily/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+        collapsable: true, // 可选的, 默认值是 true,
+        sidebarDepth: 1,    // 可选的, 默认值是 1
+        children: [            
+          'daily/测试',
+        ]
+      },
+    ],
     logo: "/logo.png",
     // 搜索设置
     search: true,
@@ -221,5 +253,6 @@ module.exports = {
         },
       },
     ],
+    ["vuepress-plugin-auto-sidebar", {}],
   ],
 };

@@ -1,3 +1,11 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: zhenzipu
+ * @Date: 2020-11-25 17:10:06
+ * @LastEditors: zhenzipu
+ * @LastEditTime: 2020-11-26 15:08:52
+-->
 <script>
 import { isActive } from '@theme/helpers/utils'
 
@@ -49,6 +57,7 @@ export default {
   padding-left 0
   list-style none
   font-size 12px
+  background  var(--background-color)
   li
     padding .2rem 0
     cursor pointer
@@ -56,6 +65,7 @@ export default {
     a
       padding 0.35rem 1rem 0.35rem 0rem
       color var(--text-color)
+      font-size .7rem !important
     &:hover
       a
        color $accentColor

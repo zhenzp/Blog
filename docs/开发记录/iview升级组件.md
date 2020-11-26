@@ -12,12 +12,16 @@ headImg:
 <Boxx/>
 ![](https://w.wallhaven.cc/full/m9/wallhaven-m9q6e9.jpg)
 
-# tco-ui
+:tada: :100:
+
+[[toc]]
+
+## tco-ui
 基于iview3封装多功能组件
 
 项目地址：[github](https://github.com/zhenzipu/tco-ui)
 
-###### 使用方法
+#### 使用方法
 npm install tco-ui
 
 import tcoUi from 'tco-ui';
@@ -27,7 +31,7 @@ Vue.use(tcoUi);
 1. 搜索表单
     支持下拉框、输入框、数字输入口、单选框、时间日期选择框搜索功能
 
-```
+``` js
 <tco-form 
     vertical
     :objData="aSearch" 
@@ -50,7 +54,7 @@ btnName | 按钮文本 |  String | '提交'
 labelWidth | label宽度 |  Number | 100
 
 #### objData 
-> ==下拉框==
+### 下拉框
 
 ```
  {
@@ -76,7 +80,7 @@ labelWidth | label宽度 |  Number | 100
     ]
 }
 ```
-> ==单选框==
+### 单选框
 
 ```
  {
@@ -100,7 +104,7 @@ labelWidth | label宽度 |  Number | 100
     ]
 }
 ```
-> ==输入框==
+### 输入框
 
 ```
  {
@@ -114,7 +118,7 @@ labelWidth | label宽度 |  Number | 100
     placeholder: '请输入'
 }
 ```
-> ==数字输入框==
+### 数字输入框
 
 ```
  {
@@ -126,7 +130,7 @@ labelWidth | label宽度 |  Number | 100
     placeholder: '请输入'
 }
 ```
-> ==时间、日期选择器==
+### 时间、日期选择器
 
 ```
 {
@@ -145,7 +149,7 @@ labelWidth | label宽度 |  Number | 100
 }
 ```
 
-#### tco-form events
+## tco-form events
 
 事件名 | 说明 | 返回值
 ---|---|---
@@ -171,7 +175,7 @@ handleSearch | 搜索 | search：搜索参数
     @changePageSize="changePageSize">
 </table-paging>
 ```
-### API
+## API
 #### Table props
 属性 | 说明 | 类型 | 默认值
 ---|---|---|---
