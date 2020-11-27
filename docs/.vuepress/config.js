@@ -4,7 +4,7 @@
  * @Author: zhenzipu
  * @Date: 2020-11-24 14:23:49
  * @LastEditors: zhenzipu
- * @LastEditTime: 2020-11-26 16:13:05
+ * @LastEditTime: 2020-11-27 11:25:29
  */
 module.exports = {
   base: "/Blog/",
@@ -58,8 +58,15 @@ module.exports = {
     type: "blog",
     huawei: false,
     nav: [
-      { text: "Home", link: "/", icon: "reco-home" },
-      { text: "TimeLine", link: "/timeline/", icon: "reco-date" },
+      { text: "主页", link: "/", icon: "reco-home" },
+      {
+        text: '关于',
+        icon: "reco-account",
+        items: [
+          { text: '前言', link: '/about/me' }
+        ]
+      },
+      { text: "时间轴", link: "/timeline/", icon: "reco-date" },
       {
         text: "GitHub",
         link: "https://github.com/zhenzp",
@@ -85,11 +92,11 @@ module.exports = {
     blogConfig: {
       category: {
         location: 2, // 在导航栏菜单中所占的位置，默认2
-        text: "Category", // 默认 “分类”
+        text: "分类", // 默认 “分类”
       },
       tag: {
         location: 3, // 在导航栏菜单中所占的位置，默认3
-        text: "Tag", // 默认 “标签”
+        text: "标签", // 默认 “标签”
       },
     },
     subSidebar: 'auto', // 在所有页面中启用自动生成子侧边栏，原 sidebar 仍然兼容
@@ -101,7 +108,7 @@ module.exports = {
         title: '开发',   // 必要的
         path: '/programs/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
         collapsable: false, // 可选的, 默认值是 true,
-        sidebarDepth: 1,    // 可选的, 默认值是 1
+        sidebarDepth: 2,    // 可选的, 默认值是 1
         children: [
           'programs/开发规范',
           'programs/面试题',
@@ -114,8 +121,8 @@ module.exports = {
       {
         title: '日常',   // 必要的
         path: '/daily/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
-        collapsable: true, // 可选的, 默认值是 true,
-        sidebarDepth: 1,    // 可选的, 默认值是 1
+        collapsable: false, // 可选的, 默认值是 true,
+        sidebarDepth: 2,    // 可选的, 默认值是 1
         children: [            
           'daily/测试',
         ]

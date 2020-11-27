@@ -11,20 +11,16 @@ headImg:
 ---
 <Boxx/>
 ![](https://w.wallhaven.cc/full/e7/wallhaven-e7zjlo.jpg)
-::: tip
-github 操作
-:::
 
 ## 创建本地分支
-### 查看分支：git branch
-### 创建分支：git branch name
-### 切换分支：git checkout name
-### 创建+切换分支：git checkout -b name
-#### 如果用 git checkout master切换到主分支，在当name分支下进行的文件变更的内容无法看到
-## 提交分支到github
-#### git push origin name
+- 查看分支：git branch
+- 创建分支：git branch name
+- 切换分支：git checkout name
+- 创建+切换分支：git checkout -b name
+### 如果用 git checkout master切换到主分支，在当name分支下进行的文件变更的内容无法看到
+- 提交分支到github:git push origin name
 ## 将分支的更新内容合并到master分支
-### 切换master分支：git checkout master
+- 切换master分支：git checkout master
 ### 合并name分支：git merge name
 #### 这时合并到master上内容还没提交到github上，需要push操作
 ## 删除分支
