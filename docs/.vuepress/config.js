@@ -4,7 +4,7 @@
  * @Author: zhenzipu
  * @Date: 2020-11-24 14:23:49
  * @LastEditors: zhenzipu
- * @LastEditTime: 2020-11-27 11:25:29
+ * @LastEditTime: 2020-12-11 11:10:00
  */
 module.exports = {
   base: "/Blog/",
@@ -48,6 +48,24 @@ module.exports = {
         language: "javascript",
         type: "text/javascript",
         src: "/js/MouseClickEffect.js",
+      },
+    ],
+    // 引入echart脚本
+    [
+      "script",
+      {
+        language: "javascript",
+        type: "text/javascript",
+        src: "http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js",
+      },
+    ],
+    // 引入中国地图数据
+    [
+      "script",
+      {
+        language: "javascript",
+        type: "text/javascript",
+        src: "/js/china.js",
       },
     ],
   ], 
